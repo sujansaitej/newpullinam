@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PULLINAM Aerospace Technologies</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007bff;
+            padding: 10px 35px;
+            border-radius: 25px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            position: fixed;
+            top: 12px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            width: 60%;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .navbar a.active, .navbar a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Section Styles */
+        .section {
+            min-height: 100vh;
+            padding: 100px 20px;
+            margin: 20px 0;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Typography */
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        p {
+            text-align: center;
+            color: #666;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #0c0128;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-brand">Pullinam Aerospace</div>
+        <ul class="navbar-menu">
+            <li><a href="#welcome" class="active">Home</a></li>
+            <li><a href="#announcements">Announcements</a></li>
+            <li><a href="#aircraft-products">Products</a></li>
+            <li><a href="#milestones">Milestones</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="section">
+        <h1>Welcome to PULLINAM Aerospace Technologies</h1>
+        <p>We are committed to pioneering the future of aviation through environmentally friendly aircraft.</p>
+    </section>
+
+    <!-- Announcements Section -->
+    <section id="announcements" class="section">
+        <h1>Announcements</h1>
+        <p>Here are the latest announcements.</p>
+    </section>
+
+    <!-- Aircraft Products Section -->
+    <section id="aircraft-products" class="section">
+        <h2>Our Aircraft</h2>
+        <ul>
+            <li>2-seater Microlight Aircraft</li>
+            <li>2-seater Light-Sport Aircraft (LSA)</li>
+            <li>4-6 seater Aircraft powered by Sustainable Aviation Fuel (SAF) or electric systems</li>
+            <li>10-seater SAF aircraft</li>
+            <li>Future products for space tourism</li>
+        </ul>
+    </section>
+
+    <!-- Milestones Section -->
+    <section id="milestones" class="section">
+        <h2>Milestones</h2>
+        <p>Our achievements and milestones in the aerospace industry.</p>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section">
+        <h2>Meet Our Founder</h2>
+        <h3>C.S. Karunakaran – Founder & CEO</h3>
+        <p>C.S. Karunakaran brings 15 years of experience in light aircraft maintenance and drone technology. He is the inventor of Asia's First Flying Bike.</p>
+
+        <h2>Meet Our Co-founder</h2>
+        <h3>S.B. Shiva Prasaath – Co-founder & COO</h3>
+        <p>S.B. Shiva Prasaath is an AI expert, overseeing strategic development, operations, and technological innovation at Pullinam Aerospace Technologies.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Phone: 9944073774 | 9443211197</p>
+        <p>Email: <a href="mailto:pat.p.ltd@gmail.com">pat.p.ltd@gmail.com</a></p>
+        <form action="contact.php" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" name="mobile" placeholder="Your Mobile Number" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Pullinam Aerospace Technologies. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
